@@ -1,14 +1,13 @@
 import { Scene } from 'phaser';
 
-export class MainMenu extends Scene
-{
-    constructor ()
-    {
+export class MainMenu extends Scene {
+    constructor() {
         super('MainMenu');
     }
 
-    create ()
-    {
+    create() {
+        console.log(this.add.json('bicicletas'));
+
         //  Get the current highscore from the registry
         const score = this.registry.get('highscore');
 
