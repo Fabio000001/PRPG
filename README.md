@@ -14,4 +14,8 @@ This is a simple coin clicker game. The goal is to click the coin as many times 
 1. This work is based in the Demo Game of Phaser: Coin Clicker
 2. Only uses the phaser and vite modules
 
+## Warnings
+
+1. The github deploy don't work
+
 ![screenshot](screenshot.png)
