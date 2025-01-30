@@ -6,7 +6,7 @@ export class MainMenu extends Scene {
     }
 
     create() {
-        console.log(this.cache.json.get('bicicletas').bicicletas[0]);
+        console.log(this.cache.json.get('bicicletas')[0]);
 
         //  Get the current highscore from the registry
         const score = this.registry.get('highscore');
