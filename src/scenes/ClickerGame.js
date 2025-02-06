@@ -66,6 +66,8 @@ export class ClickerGame extends Scene {
 
         //  Drop a new coin
         this.dropCoin();
+
+        Bugfender.log("Moneda recogida");
     }
 
     update() {

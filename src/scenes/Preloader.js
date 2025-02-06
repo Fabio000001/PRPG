@@ -33,7 +33,12 @@ export class Preloader extends Scene {
         this.load.image('logo', 'dragon-logo.png');
         this.load.atlas('coin', 'coin.png', 'coin.json');
 
-        this.load.json('bicicletas', 'https://express-generator-3v4a.onrender.com/api/bicicletas');
+        try {
+            this.load.json('bicicletas', 'https://express-generator-3v4a.onrender.com/api/bicicletas');
+            Bugfender.log("API Bicicletas cargada");
+        } catch (error) {
+            Bugfender.error(error);
+        }
 
         Bugfender.log("Assets cargados");
     }
