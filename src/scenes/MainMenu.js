@@ -1,3 +1,4 @@
+import { Bugfender } from '@bugfender/sdk';
 import { Scene } from 'phaser';
 
 export class MainMenu extends Scene {
@@ -40,5 +41,7 @@ export class MainMenu extends Scene {
             this.scene.start('ClickerGame');
 
         });
+
+        Bugfender.log("Menú principal cargado");
     }
 }

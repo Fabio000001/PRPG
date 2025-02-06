@@ -8,6 +8,9 @@ import { Bugfender } from '@bugfender/sdk';
 
 Bugfender.init({
     appKey: "51xntK1ezjJhyy2JTQJyl1EwePsEJWsZ",
+    overrideConsoleMethods: false,
+    logBrowserEvents: false,
+    logUIEvents: false,
 });
 
 //  Find out more information about the Game Config at: https://newdocs.phaser.io/docs/3.70.0/Phaser.Types.Core.GameConfig

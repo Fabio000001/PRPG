@@ -1,3 +1,4 @@
+import { Bugfender } from '@bugfender/sdk';
 import { Scene } from 'phaser';
 
 export class GameOver extends Scene {
@@ -25,5 +26,7 @@ export class GameOver extends Scene {
             this.scene.start('MainMenu');
 
         });
+
+        Bugfender.log("Juego terminado");
     }
 }

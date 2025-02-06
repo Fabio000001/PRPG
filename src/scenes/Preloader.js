@@ -1,3 +1,4 @@
+import { Bugfender } from '@bugfender/sdk';
 import { Scene } from 'phaser';
 
 export class Preloader extends Scene {
@@ -33,6 +34,8 @@ export class Preloader extends Scene {
         this.load.atlas('coin', 'coin.png', 'coin.json');
 
         this.load.json('bicicletas', 'https://express-generator-3v4a.onrender.com/api/bicicletas');
+
+        Bugfender.log("Assets cargados");
     }
 
     create() {

@@ -1,3 +1,4 @@
+import { Bugfender } from '@bugfender/sdk';
 import { Scene } from 'phaser';
 
 export class ClickerGame extends Scene {
@@ -6,6 +7,8 @@ export class ClickerGame extends Scene {
     }
 
     create() {
+        Bugfender.log("Juego iniciado");
+
         this.score = 0;
 
         this.coins = [];
