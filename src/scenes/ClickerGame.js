@@ -97,4 +97,26 @@ export class ClickerGame extends Scene {
         //  Swap to the GameOver scene after a 2 second delay
         this.time.delayedCall(2000, () => this.scene.start('GameOver'));
     }
+
+    controlledError() {
+        try {
+            // Error tipo 1: Referencia a una variable no definida
+            let result = undefinedVariable + 10;  // Esto debería generar un ReferenceError
+        } catch (error) {
+            console.error("Error tipo 1:", error);
+            Bugfender.error("Error tipo 1", error.message);
+        }
+
+        try {
+            // Error tipo 2: Intento de dividir por cero
+            let division = 10 / 0;
+            if (!isFinite(division)) {
+                throw new Error("División por cero");
+            }
+        } catch (error) {
+            console.error("Error tipo 2:", error);
+            Bugfender.error("Error tipo 2", error.message);
+        }
+    }
+
 }
