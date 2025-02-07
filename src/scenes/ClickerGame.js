@@ -30,6 +30,11 @@ export class ClickerGame extends Scene {
         }
 
         this.input.on('gameobjectdown', (pointer, gameObject) => this.clickCoin(gameObject));
+
+        // Botón
+        const boton = this.add.image(512, 64, 'boton');
+        boton.setInteractive();
+        boton.on('pointerdown', this.controlledError, this);
     }
 
     dropCoin() {

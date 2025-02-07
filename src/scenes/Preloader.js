@@ -31,6 +31,7 @@ export class Preloader extends Scene {
 
         this.load.image('background', 'mountains-background.jpg');
         this.load.image('logo', 'dragon-logo.png');
+        this.load.image('boton','boton.png');
         this.load.atlas('coin', 'coin.png', 'coin.json');
 
         try {
